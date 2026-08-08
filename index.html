@@ -1,238 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remindfulness</title>
-    <style>
-        /* Base Page Styles */
-        body {
-            margin: 0;
-            padding: 40px 20px;
-            background-image: url('bg.png');
-            background-repeat: repeat;
-            font-family: 'Century Gothic', 'Futura', sans-serif;
-            color: #333333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            box-sizing: border-box;
-        }
-
-        /* Main Wrapper Box */
-        .container {
-            width: 100%;
-            max-width: 960px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        /* Header Elements */
-        .word-logo {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        .tagline {
-            font-size: 1.25rem;
-            font-weight: 300;
-            line-height: 1.4;
-            margin: 0 auto 25px auto;
-            max-width: 600px;
-        }
-
-        .app-store-btn {
-            display: inline-block;
-            margin-bottom: 40px;
-        }
-
-        .app-store-btn img {
-            width: 170px;
-            height: auto;
-        }
-
-        /* Flexible Middle Section Layout */
-        .content-layout {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-
-        /* Banner Container */
-        .banner-box {
-            flex: 1;
-            max-width: 550px;
-        }
-
-        .banner-box img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 4px;
-        }
-
-        /* Navigation Buttons Container */
-        .nav-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            width: 250px;
-        }
-
-        .nav-buttons a {
-            display: block;
-            transition: transform 0.2s ease;
-        }
-
-        .nav-buttons a:hover {
-            transform: scale(1.03);
-        }
-
-        .nav-buttons img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Footer Product Editions Layout */
-        .editions-footer {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 20px;
-        }
-
-        .edition-item {
-            flex: 1;
-            max-width: 200px;
-        }
-
-        /* Styling text-based links at the bottom */
-        .edition-link {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .edition-link:hover .edition-title {
-            text-decoration: underline;
-        }
-
-        .edition-title {
-            font-size: 1.1rem;
-            font-weight: normal;
-            margin: 0 0 4px 0;
-        }
-
-        .edition-status {
-            font-size: 0.9rem;
-            font-style: italic;
-            color: #666666;
-            margin: 0;
-      }
-
-        /* Copyright Notice & Footer Zone Styling */
-        .copyright-notice {
-            margin-top: 100px; /* Large space above the footer zone */
-            padding-top: 30px; /* Space between the line and the copyright text */
-            border-top: 1px solid rgba(0, 0, 0, 0.1); /* Faint, modern divider line */
-            font-size: 0.85rem;
-            color: #777777;
-        }
-
-        /* 📱 Responsive Mobile Adjustments */
-        @media (max-width: 768px) {
-            body {
-                padding: 20px 15px;
-            }
-
-            .tagline {
-                font-size: 1.1rem;
-            }
-
-            /* Switches middle layout from Side-by-Side to Top-to-Bottom */
-            .content-layout {
-                flex-direction: column;
-                gap: 25px;
-            }
-
-            .banner-box {
-                width: 100%;
-            }
-
-            .nav-buttons {
-                width: 100%;
-                max-width: 260px;
-            }
-
-            /* Flips bottom row to a vertical list on small screens */
-            .editions-footer {
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <!-- Header Section -->
-        <header>
-            <img src="wordlogo.png" alt="Remindfulness" class="word-logo">
-            <p class="tagline">Apps that remind you to be mindful throughout your busy day</p>
-            
-            <!-- App Store Link Placeholder -->
-            <a href="https://apps.apple.com/us/app/remindfulness/id588697678" class="app-store-btn" target="_blank">
-                <img src="appstore2.png" alt="Download on the App Store">
-            </a>
-        </header>
-
-        <!-- Main Content Area -->
-        <main class="content-layout">
-            <!-- Left Side: Interactive Graphic Banner -->
-            <div class="banner-box">
-                <img src="banner.png" alt="Remindfulness Graphic Banner">
-            </div>
-
-            <!-- Right Side: Navigation Buttons Placeholders -->
-            <nav class="nav-buttons">
-                <a href="https://www.remindfulnessapp.com"><img src="button1.png" alt="Home"></a>
-                <a href="https://www.remindfulnessapp.com/privacy-policy.html"><img src="button2.png" alt="Privacy Policy"></a>
-                <a href="https://www.remindfulnessapp.com/support.html"><img src="button3.png" alt="Support"></a>
-            </nav>
-        </main>
-
-        <!-- Footer Section: Hyperlinked Text Editions Placeholders -->
-        <footer class="editions-footer">
-            <div class="edition-item">
-                <a href="https://www.remindfulnessapp.com/classic-edition.html" class="edition-link">
-                    <h3 class="edition-title">Classic Edition</h3>
-                    <p class="edition-status">Available now</p>
-                </a>
-            </div>
-            <div class="edition-item">
-                <a href="https://www.remindfulnessapp.com/recovery-edition.html" class="edition-link">
-                    <h3 class="edition-title">Recovery Edition</h3>
-                    <p class="edition-status">Returning Soon</p>
-                </a>
-            </div>
-            <div class="edition-item">
-                <a href="https://www.remindfulnessapp.com/tf-edition.html" class="edition-link">
-                    <h3 class="edition-title">Twin Flame Edition</h3>
-                    <p class="edition-status">NEW Coming Soon</p>
-               </a>
-            </div>
-        </footer>
-
-        <!-- Copyright Info inside Footer Zone -->
-        <p class="copyright-notice">&copy; Copyright 2013-2026 Naomi Janzen - Freedom Techniques</p>
-    </div>
-
-</body>
-</html>
+<!-- BirdSend Form Starts -->
+<style>.bs-form-plain{margin:auto}.bs-form-plain,.bs-form-plain *,.bs-form-plain :after,.bs-form-plain :before{box-sizing:border-box}.bs-form-plain .bs-btn{display:inline-block;padding:6px
+12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px
+solid transparent;border-radius:4px}.bs-form-plain .bs-btn.active:focus,.bs-form-plain .bs-btn:active:focus,.bs-form-plain .bs-btn:focus{outline:5px
+auto -webkit-focus-ring-color;outline-offset:-2px}.bs-form-plain .bs-btn:focus,.bs-form-plain .bs-btn:hover{color:#333;text-decoration:none}.bs-form-plain .bs-btn.active,.bs-form-plain .bs-btn:active{background-image:none;outline:0;box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}.bs-form-plain .bs-btn[disabled]{cursor:not-allowed;filter:alpha(opacity=65);box-shadow:none;opacity:.65}.bs-form-plain .bs-form-field{display:block;width:100%;height:40px;padding:7px
+12px;font-size:20px;line-height:1.5384616;color:#3a3a3a;border:none;text-align:left;margin-bottom:5px;background-color:inherit}.bs-form-plain .bs-header{font-size:30px}.bs-form-plain
+p{display:inline}.bs-form-plain .bs-gdpr{display:inline;font-size:11px;line-height:1.7}.bs-form-plain .bs-branding,.bs-form-plain .bs-footer{font-size:11px;text-align:center}.bs-form-plain .bs-branding{margin-top:24px}.bs-form-plain input[type=checkbox]{-webkit-appearance:none;-moz-appearance:none;display:inline-block;width:14px;height:14px;background-color:#fff;border:1px
+solid #e5e2e2;border-radius:2px;cursor:pointer;margin:0
+5px -2px 0;vertical-align:-1px;position:relative}.bs-form-plain input[type=checkbox]:checked{background:none;background-position:50%;background-size:75%;background-repeat:no-repeat;border:1px
+solid #333;box-shadow:none}.bs-form-plain input[type=checkbox]:checked:before{position:absolute;content:"\2714";font-size:90%;color:#333;top:0;left:2px}.bs-form-plain input[type=checkbox]:focus{outline:none}.bs-form-plain
+a{color:#406ba1;text-decoration:none}.bs-form-plain a:focus,.bs-form-plain a:hover{color:#2a476a;text-decoration:underline}.bs-form-one{max-width:472px;padding:40px
+64px;font-family:Open Sans,sans-serif;background-color:#fff;border:1px
+solid #e5e2e2;border-radius:6px}.bs-form-one .bs-header{margin-bottom:6px;font-size:24px;font-weight:600;color:#555;text-align:center}.bs-form-one .bs-subheader{margin-bottom:16px;font-size:16px;font-weight:400;text-align:center;color:#888}.bs-form-one .bs-footer,.bs-form-one .bs-header,.bs-form-one .bs-subheader{height:auto}.bs-form-one .bs-input{height:40px;width:100%;padding:8px;font-size:14px;color:#555;border:1px
+solid #e5e2e2;border-radius:3px;margin-bottom:6px}.bs-form-one .bs-textarea{min-height:100px}.bs-form-one .bs-input:hover{border-color:#c1c0c0}.bs-form-one .bs-input:active,.bs-form-one .bs-input:focus{outline:none;border-color:#57cf62}.bs-form-one .bs-input::-webkit-input-placeholder,.bs-form-one .bs-placeholder{font-style:italic;color:#e5e2e2}.bs-form-one .bs-input::-moz-placeholder,.bs-form-one .bs-placeholder{font-style:italic;color:#e5e2e2}.bs-form-one .bs-input:-ms-input-placeholder,.bs-form-one .bs-placeholder{font-style:italic;color:#e5e2e2}.bs-form-one .bs-input::-ms-input-placeholder,.bs-form-one .bs-placeholder{font-style:italic;color:#e5e2e2}.bs-form-one .bs-input::placeholder,.bs-form-one .bs-placeholder{font-style:italic;color:#e5e2e2}.bs-form-one .bs-btn{height:40px;width:100%;margin-top:16px;font-size:16px;font-weight:600;color:#fff;letter-spacing:.5px;background-color:#57cf62;border:none;border-radius:3px}.bs-form-one .bs-btn:active,.bs-form-one .bs-btn:focus,.bs-form-one .bs-btn:hover{outline:none;background-color:#4bb555;cursor:pointer;color:#fff}</style>
+<div class="bs-form-plain bs-form-one">
+    <form action="https://app.birdsend.co/subscribe" method="post" bs-form>
+        <div style="display: none;">
+            <input type="hidden" name="meta_id" value="34839">
+            <input type="hidden" name="meta_user_id" value="3507">
+        </div>
+        
+                                    <input type="text" name="first_name" class="bs-input" placeholder="First Name"   required >
+                                                <input type="email" name="email" class="bs-input" placeholder="Email Address" required>
+                            
+        <button type="submit" class="bs-btn">JOIN THE COMMUNITY</button>
+        
+                <!-- Please do not remove this or risk form bot signups-->
+<div style="position: absolute; left: -5600px;" aria-hidden="true">
+<input type="text" name="confirmdata" tabindex="-1" value="" autocomplete="new-password"></div>    </form>
+    <div id="bs-message"></div>
+    <script>
+(function(w, d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) { return; }
+    js = d.createElement(s); js.id = id; js.src = 'https://cdn.birdsend.co/assets/static/js/form.js'; fjs.parentNode.insertBefore(js, fjs);
+}(window, document, 'script', 'birdsend-form-js'));
+</script></div>
+<!-- BirdSend Form Ends -->
