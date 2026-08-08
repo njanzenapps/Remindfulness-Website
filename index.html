@@ -18,7 +18,9 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: "Jost", system-ui, sans-serif; font-weight: 300; color: var(--ink);
-  background: radial-gradient(120% 90% at 50% -10%, #ffffff 0%, var(--silver) 55%, var(--silver-deep) 100%) fixed var(--silver);
+  background:
+    radial-gradient(120% 90% at 50% -10%, rgba(255,255,255,0.55) 0%, rgba(242,243,245,0.35) 55%, rgba(228,230,234,0.25) 100%),
+    url('steel_background.jpg') center top / cover no-repeat var(--silver);
   min-height: 100vh; display: flex; flex-direction: column; align-items: center;
   padding: 40px 22px 60px; text-align: center;
 }
